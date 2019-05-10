@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html, body {
+	font-family: Roboto, sans-serif;
+}
+
+.successContainer {
+	max-width: 960px;
+	margin: auto;
+}
+
+.successContainer h1 {
+	text-align: center;
+}
+
+.imgContainer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.imgContainer img {
+	width: 20%;
+}

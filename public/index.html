@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/homeStyles.css">
+</head>
+<body class="black">
+	<div class="navbar-fixed">
+	    <nav class="transparent">
+	      <div class="nav-wrapper">
+	        <a href="index.html" class="white-text brand-logo center">MonteLibro</a>
+	        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="white-text material-icons">menu</i></a>
+	        <ul class="hide-on-med-and-down">
+	          <li class="active"><a class="white-text" href="index.html">Home</a></li>
+	          <li><a class="white-text" href="search.html">Browse Books</a></li>
+	          <li><a class="white-text" href="leaderboard.html">Readers Leaderboard</a></li>
+	        </ul>
+	        <ul class="right hide-on-small-only">
+	          <li><a class="btn waves-effect" href="register.html">Register</a></li>
+	          <li><a class="btn white teal-text waves-effect" href="login.html">Login</a></li>
+	        </ul>
+	      </div>
+	    </nav>
+	</div>
+	<ul class="sidenav" id="mobile-demo">
+	  	<li><a href="index.html">Home</a></li>
+	    <li><a href="search.html">Browse Books</a></li>
+	    <li><a href="leaderboard.html">Readers Leaderboard</a></li>
+	    <li class="hide-on-med-and-up"><a href="register.html">Register</a></li>
+	    <li class="hide-on-med-and-up"><a href="login.html">Login</a></li>
+	</ul>
+  	<header>
+	  	<div class="headerInner">
+	  		<div id="image1" class="imageContainer ">
+					<h2 class="center">You are a book maniac <br>but you don't care for hard copies?</h2>
+			</div> 
+			<div id="image2" class="imageContainer">
+					<h2 class="center">Sign up for your free access NOW!</h2>
+						<p class="center-align"><a class="yellow darken-3 black-text btn btn-large waves-effect" href="register.html">Sign Up</a></p>
+			</div>
+			<div id="image3" class="imageContainer valign-wrapper">
+					<h1 class="center">MonteLibro</h1>
+			</div> 
+	  	</div>	
+  	</header>
+  	<footer>
+	  	<div class="row">
+	  		<div class="col s12 m6">
+	  		<h5 class="white-text center">SUBSCRIBE</h5>
+	  		<div class="row">
+	  			<form action="index.html" action="POST">
+		  			<div class="input-field col s12 l6 offset-l2">
+		  				<input class="white-text" type="email" placeholder="Enter your email...">
+		  			</div>
+		  			<div class="input-field col s12 l4">
+		  				<button class="btn btn-large waves-effect">Subscribe</button>
+		  			</div>
+		  		</form>
+	  		</div>
+	  	</div>
+  		<div class="col s12 m6">
+  			<h5 class="white-text center">SHARE</h5>
+	  		<div id="social" class="center-align">
+		  		<a href="" class="tooltipped btn-floating" data-tooltip="Instagram">
+		            <i class="fab fa-instagram"></i>
+		        </a>
+		        <a href="" class="tooltipped btn-floating" data-tooltip="Facebook">
+		            <i class="fab fa-facebook"></i>
+		        </a>
+		        <a href="" class="tooltipped btn-floating" data-tooltip="Twitter">
+		            <i class="fab fa-twitter"></i>
+		        </a>
+	        </div>
+  		</div>
+  	</div>
+  	<div class="footer-copyright grey darken-4">
+      	<div class="container center-align white-text">&copy; 2019 Petar Karagenov</div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/mobileSidebar.js"></script>
+</body>
+</html>

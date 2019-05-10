@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/registerStyles.css">
+	<title>Register</title>
+</head>
+<body>
+	<div class="form-container">
+		<div class="card">
+			<div class="card-body">
+				<h3 class="teal-text text-center">Register</h3>
+				<div class="row">
+				    <form class="col s12" action="success.html">
+				      <div class="row">
+				        <div id="fullNameContainer" class="input-field col s12">
+				          <i class="material-icons prefix">person</i>
+				          <input id="fullName" type="text">
+				          <label for="fullName">Full Name</label>
+				        </div>
+				      </div>
+				      <div class="row">
+				        <div id="emailContainer" class="input-field col s12">
+				          <i class="material-icons prefix">email</i>
+				          <input id="email" type="text">
+				          <label for="email">Email</label>
+				        </div>
+				      </div>
+				      <div class="row">
+				        <div id="passContainer" class="input-field col s12">
+				          <i class="material-icons prefix">lock</i>
+				          <input id="password" type="password">
+				          <label for="password">Password</label>
+				        </div>
+				      </div>
+				      <div class="row">
+				        <div id="confirmContainer" class="input-field col s12">
+				          <i class="material-icons prefix">lock</i>
+				          <input id="confirmPassword" type="password">
+				          <label for="confirmPassword">Confirm Password</label>
+				        </div>
+				      </div>
+				      <button class="register btn waves-effect waves-light">Register</button>
+				    </form>
+				</div>
+			</div>
+			<div class="card-action">
+				<a href="#" id="back">Back</a>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="js/validate.js"></script>
+	<script src="js/back.js"></script>
+</body>
+</html>

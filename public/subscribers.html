@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/leaderBoardStyles.css">
+	<link rel="stylesheet" href="css/spinner.css">
+	<title>Subscribers</title>
+</head>
+<body>
+
+  	<div class="navbar-fixed">
+	    <nav>
+	      <div class="nav-wrapper white">
+	        <a href="index.html" class="teal-text brand-logo center">MonteLibro</a>
+	        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="teal-text material-icons">menu</i></a>
+	        <ul class="hide-on-med-and-down">
+	          <li><a class="teal-text" href="index.html">Home</a></li>
+	          <li><a class="teal-text" href="search.html">Browse Books</a></li>
+	          <li class="active"><a class="teal-text" href="leaderboard.html">Readers Leaderboard</a></li>
+	        </ul>
+	        <ul class="right hide-on-small-only">
+	          <li><a class="btn" href="register.html">Register</a></li>
+	          <li><a class="btn white teal-text" href="login.html">Login</a></li>
+	        </ul>
+	      </div>
+	    </nav>
+  	</div>
+
+  	<ul class="sidenav" id="mobile-demo">
+	    <li><a href="index.html">Home</a></li>
+	    <li><a href="search.html">Browse Books</a></li>
+	    <li><a href="leaderboard.html">Readers Leaderboard</a></li>
+	    <li class="hide-on-med-and-up"><a href="register.html">Register</a></li>
+	    <li class="hide-on-med-and-up"><a href="login.html">Login</a></li>
+  	</ul>
+
+	<div class="container">
+		<div class="row">
+			<h1 class="teal-text center">Subscribers List</h1>
+		</div>
+		<table class="centered highlight">
+			<thead>
+				<tr>
+					<th>Email</th>
+					<th>Subscribed</th>
+				</tr>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="js/subscribers.js"></script>
+	<script src="js/mobileSidebar.js"></script>
+</body>
+</html>

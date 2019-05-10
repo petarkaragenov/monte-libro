@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/searchStyles.css">
+	<link rel="stylesheet" href="css/spinner.css">
+	<link rel="stylesheet" href="rater-js/style.css">
+	<title>Browse Books</title>
+</head>
+<body>
+
+  	<div class="navbar-fixed">
+	    <nav>
+	      <div class="nav-wrapper white">
+	        <a href="index.html" class="teal-text brand-logo center">MonteLibro</a>
+	        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="teal-text material-icons">menu</i></a>
+	        <ul class="hide-on-med-and-down">
+	          <li><a class="teal-text" href="index.html">Home</a></li>
+	          <li class="active"><a class="teal-text" href="search.html">Browse Books</a></li>
+	          <li><a class="teal-text" href="leaderboard.html">Readers Leaderboard</a></li>
+	        </ul>
+	        <ul class="right hide-on-small-only">
+	          <li><a class="btn" href="register.html">Register</a></li>
+	          <li><a class="btn white teal-text" href="login.html">Login</a></li>
+	        </ul>
+	      </div>
+	    </nav>
+  	</div>
+
+	<ul class="sidenav" id="mobile-demo">
+	  <li><a href="index.html">Home</a></li>
+	  <li><a href="search.html">Browse Books</a></li>
+	  <li><a href="leaderboard.html">Readers Leaderboard</a></li>
+	  <li class="hide-on-med-and-up"><a href="register.html">Register</a></li>
+	  <li class="hide-on-med-and-up"><a href="login.html">Login</a></li>
+	</ul>
+
+	<div class="container">
+		<h1 class="teal-text center">Browse</h1>
+		<div class="row">
+			<form id="searchForm">
+	  			<div class="input-field col s12 l7 offset-l1">
+	  				<input id="searchField" type="text">
+	  				<label for="searchField">Enter an Author or Title</label>
+	  			</div>
+	  			<div class="input-field col s12 l3">
+	  				<button class="btn btn-large waves-effect"><i class="material-icons left">search</i>Search</button>
+	  			</div>
+	  		</form>
+		</div>
+		<div class="row">
+			<form id="filterForm">
+				<div class="input-field col s12 l5">
+	  				<select id="sortBy">
+						<option value="title" selected>Title</option>
+						<option value="author">Author</option>
+						<option value="reads">Popularity</option>
+						<option value="rating">Rating</option>
+						<option value="votes">Votes</option>
+						<option value="year">Year</option>
+	  				</select>
+	  				<label for="sortBy">Sort by...</label>
+	  			</div>
+	  			<div class="input-field col s12 l5">
+	  				<select id="show">
+						<option value="10" selected>10</option>
+						<option value="25">25</option>
+						<option value="50">50</option>
+						<option value="100">All</option>
+	  				</select>
+	  				<label for="show">Show...</label>
+	  			</div>
+	  			<div class="input-field col s12 l2">
+		  			<div class="imgContainer">
+		  				<button class="btn btn-large waves-effect">Go!</button>
+		  			</div>  				
+	  			</div>
+			</form>
+		</div>
+		<div id="resultsContainer" class="spinner">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" alt="">		
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="rater-js/rater-js.js"></script>
+	<script src="js/searchBooks.js"></script>
+	<script src="js/mobileSidebar.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+    		var elems = document.querySelectorAll('select');
+    		var instances = M.FormSelect.init(elems);
+  		});
+	</script>
+</body>
+</html>

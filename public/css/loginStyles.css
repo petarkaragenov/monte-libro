@@ -1,0 +1,57 @@
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+	margin-right: 0;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover, .forgottenPassword:hover {
+    color: #ffd8a6 !important;
+}
+
+.card {
+	margin-top: 6em;
+	animation: fadeIn 1s ease;
+}
+
+.forgottenContainer {
+	padding-top: 1em;
+}
+
+.forgottenPassword {
+	text-decoration: none;
+	transition: color 0.3s ease;
+	font-size: 0.7em 
+}
+
+.card-image {
+	display: flex;
+	justify-content: center;
+	padding: 1.4em 0;
+}
+
+.personCircle {
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	box-shadow: 1px -1px 6px rgba(0,0,0,0.2), -1px 0 6px rgba(0,0,0,0.2);
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@media (min-width: 600px) {
+	.card-image {
+		height: 60px;
+		padding: 0;
+	}
+
+	.personCircle {
+		transform: translateY(-50%);
+		width: 120px;
+		height: 120px;
+	}
+
+	.personCircle i {
+		font-size: 120px;
+	}
+}

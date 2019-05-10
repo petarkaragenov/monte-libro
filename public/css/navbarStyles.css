@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Italianno');
+
+.brand-logo {
+	font-family: Italianno;
+	font-size: 2.6em !important;
+	top: 0.1em;
+}
+
+@media (min-width: 640px) {
+	.brand-logo {
+		font-size: 3.8em !important;
+	}
+}

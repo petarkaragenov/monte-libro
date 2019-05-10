@@ -1,0 +1,80 @@
+@import url('navbarStyles.css');
+.container {
+	width: 100%;
+	animation: fadeInTranslate 1s ease;
+}
+
+table tr td{
+	animation: fadeIn 1s ease;
+}
+
+.row {
+	margin-bottom: 0;
+}
+
+h1 {
+	font-size: 1.8em;
+	margin-top: 20px;
+	margin-bottom: 16px;
+}
+
+img {
+	width: 64px;
+}
+
+.card-panel {
+	margin-bottom: 7.25px;
+}
+
+.columnHighlighted {
+	background: #F8F8F8;
+}
+
+#username, #reads {
+	color: #03B2E9;
+	cursor: pointer;
+}
+
+@keyframes fadeIn {
+	0% { 
+		opacity: 0; 
+	}
+	100% { 
+		opacity: 1; 
+	}
+}
+
+@keyframes fadeInTranslate {
+	0% { 
+		opacity: 0; 
+		transform: translateY(-20%);
+	}
+	100% { 
+		opacity: 1; 
+		transform: translateY(0);
+	}
+}
+
+@media (min-width: 460px) {
+	h1 {
+		font-size: 2.6em;
+	}
+}
+
+@media (min-width: 601px) {
+	h1 {
+		font-size: 3.4em;
+	}
+}
+
+@media (min-width: 800px) {
+	.container {
+		width: 70%;
+	}
+
+	h1 {
+		font-size: 4.2em;
+		margin-top: 39.2px;
+		margin-bottom: 23.5617px;
+	}
+}
